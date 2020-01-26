@@ -106,8 +106,43 @@
         <br/>
          
 
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:30px"><tbody>
         <heading style="padding:0px;width:100%;vertical-align:middle">Publications</heading>
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/carm_tracking.jpg' width='200px'></div>
+                <img src='images/carm_tracking.jpg' width='200px'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>
+Pose-aware C-Arm Calibration and Image Distortion Correction for Guidewire Tracking and Image Reconstruction</papertitle>
+              </a>
+              <br>
+              Florian Heemeyer*,
+              <strong>Anirudh Choudhary*</strong>,
+              Jaydev P. Desai
+              <br>
+              <em>To appear in International Symposium on Medical Robotics (Georgia Tech)</em>, 2020 &nbsp
+              <br>
+              <p></p>
+              <p>Image intensifiers, also known as C-arms, are important and low-cost tools for surgeons to guide minimally-invasive procedures. However, image intensifiers suffer from several image distortions, which can be misleading during an automated minimally-invasive surgery. We propose a combination of camera-based tracking system and calibration grid to perform accurate distortion correction.</p>
+            </td>
+          </tr>
+          
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
             <td style="padding:20px;width:30%;vertical-align:middle">
               <div class="one">
@@ -174,7 +209,7 @@ Learning to Evaluate Color Similarity for Histopathology Images using Triplet Ne
               <em>Micron Journal (Elsevier)</em>, 2011
               <br>
               <p></p>
-              <p>A novel texture based segmentation algorithm for better delineation of the epithelial layer from histological images using Gabor Filter and multistep watershed region merging</p>
+              <p>A novel texture based segmentation algorithm for better delineation of the epithelial layer from histological images using Gabor Filter and multistep region-merging using watershed-generated superpixels.</p>
             </td>
           </tr>
           
@@ -213,39 +248,6 @@ Learning to Evaluate Color Similarity for Histopathology Images using Triplet Ne
               <p>Evaluating statistical and spectral texture features of epithelial layer in oral whole slide images for cancer classification using Support Vector Machines</p>
             </td>
           </tr>
-          
-          <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='porlight_image'><img src='images/filter.png' width='200px'></div>
-                <img src='images/filter.png' width='200px'>
-              </div>
-              <script type="text/javascript">
-                function porlight_start() {
-                  document.getElementById('porlight_image').style.opacity = "1";
-                }
-
-                function porlight_stop() {
-                  document.getElementById('porlight_image').style.opacity = "0";
-                }
-                porlight_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>A new image processing filter for the automatic extraction of organs’ internal structures:  Application to liver tumors</papertitle>
-              <br>
-              Francesca P. Ferrarese, 
-              Nicolla Moretto, 
-              Debora Botturi,
-              <strong>Anirudh Choudhary</strong>, 
-              Giulia A. Zamboni
-              <br>
-              <em>European Congress on Radiology</em>, 2009 &nbsp (Poster)
-              <br>
-              <p></p>
-              <p></p>
-            </td>
-          </tr>
 
           <tr onmouseout="loss_stop()" onmouseover="loss_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -269,7 +271,7 @@ Learning to Evaluate Color Similarity for Histopathology Images using Triplet Ne
                 <papertitle>An Entropy Based Multi-Thresholding Method for Semi-Automatic Segmentation of Liver Tumors</papertitle>
               </a>
               <br>
-              <strong>Anirudh Choudhary</strong>,
+              <strong>Anirudh Choudhary</strong>
               Nicola Moretto,
               Francesca P. Ferrarese,
               Giulia A. Zamboni
@@ -281,7 +283,12 @@ Learning to Evaluate Color Similarity for Histopathology Images using Triplet Ne
             </td>
           </tr>
 
+          
+
        </tbody></table>
+      <br/><br/>
+                       (*equal contribution)
+       
 <br/><br/>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"><tbody>
           <tr>
@@ -328,11 +335,12 @@ Learning to Evaluate Color Similarity for Histopathology Images using Triplet Ne
           <br/>          
           <b>Machine Learning with Limited Supervision (CS8803) <br/></b>
           <i>Course Project</i>: Unsupervised Domain Adaptation in Videos for Activity Recognition<br/>
-           <br/>
+          Developed adversarial domain alignment approach using spatio-temporal CNN for aligning UCF and HMDB datasets.  Evaluated attention and optical-flow based feature pooling, two stream action recognition network and graph temporal network for temporal domain adaptation.  
+          (<a href="https://www.youtube.com/watch?v=CQMWy-RD3_E">Video</a>, <a href="https://anic46.github.io/data/CS8803_team-12_final_presentation.pdf">Slides</a>) <br/><br/>
        
           <b>CSE Algorithms (CSE6140)</b><br/>
           <i>Course Project</i>: Evaluated Branch and Bound, Minimum Spanning Tree Approximation and Local Search based approaches for Traveling Salesman Problem (TSP)<br>
-          Implemented List based Simulated Annealing achieving 0-3% relative error on TSPLIB instances.(<a href="data/CSE6140_Project.pdf">Report</a>)<br/>
+          Implemented List based Simulated Annealing achieving 0-3% relative error on TSPLIB instances.(<a href="data/CSE6140_Project.pdf">Report</a>, <a href="https://github.com/anic46/CSE-Algorithms-CSE6140">Code</a>)<br/>
           </tr>
         </tbody></table>
 
