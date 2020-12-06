@@ -84,28 +84,28 @@ tr,
 p,
 a {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 12px
 }
 
 strong {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 heading {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 papertitle {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700
 }
 
 name {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .one {
