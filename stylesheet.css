@@ -172,7 +172,9 @@ table.schedule {
 	border-collapse: collapse;
 	background-color: white;
 }
-
+table.img{
+	border:1px;
+}
 
 
 /* Notes */
